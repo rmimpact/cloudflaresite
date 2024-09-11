@@ -13,14 +13,18 @@ nav {
 body {
     background-color: rgb(2, 3, 28);
     color: white;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
  
     
     
 }
 @keyframes totheright {
-    0% {left: 0vw;}
-    50% {left:100vw;}
-    100% {left: 0vw}
+    0% {left: 2vw;}
+    50% {left:86.5vw;}
+    100% {left: 2vw}
 }
 .floating_div {
     background-color: goldenrod;

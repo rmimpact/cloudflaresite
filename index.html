@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website in progress...">
@@ -12,83 +11,14 @@
     <meta property="og:image" content="https://remymoscovitz.com/rm_custom_icon.png" />
     <meta property="og:url" content="remymoscovitz.com" />
     <html lang="en">
-
-<style>
-    nav {
-        background-color: black;
-        text-align: right;
-    }
-    .main_header {
-        font-family: arial; 
-        font-size: 3.4rem; 
-
-    }
-    body {
-        background-color: rgb(2, 3, 28);
-        color: white;
-        margin-top: 20vh;
-        margin-left: 10vw;
-        
-        
-    }
-    @keyframes totheright {
-        0% {left: 0vw;}
-        50% {left:100vw;}
-        100% {left: 0vw}
-    }
-    .floating_div {
-        background-color: goldenrod;
-        height: 13.5vh;
-        width: 13.5vh;
-        filter: blur(10px);
-        opacity: 49%;
-        border-radius: 999px;
-        position: fixed;
-        animation: totheright 6s infinite ease-in-out;
-        top: 5vh;
-        
-    }
-    @keyframes dots {
-
-    }
-    
-    .loader {
-  width: 100vw;
-  height: 12px;
-  --c:#ffffff 50%,#ff000000 0;
-  background: 
-    linear-gradient(90deg ,var(--c)) 0 0%,
-    linear-gradient(-90deg,var(--c)) 0 50%,
-    linear-gradient(90deg ,var(--c)) 0 100%;
-  background-size: 8px calc(100%/3);
-  background-repeat: repeat-x;
-  animation: l8 .25s infinite linear;
-  position: fixed;
-  top: 80vh;
-  left: 0;
-}
-@keyframes l8 {
-    100% {background-position: -8px 0%,-8px 50%,-8px 100%}
-}
-.floating_logo {
-        height: 13vh;
-        width: 13vh;
-        opacity: 70%;
-        border-radius: 999px;
-        position: fixed;
-        animation: totheright 6s infinite ease-in-out;
-        top: 5vh;
-        
-    }
-
-</style>
+    <link href="css.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
     <div class="floating_div"></div>
     <img class="floating_logo" src="https://i.ibb.co/CbT5Qf9/rm-custom-icon.png">
     <h1 class="main_header">Site in progress</h1>
     <div class="loader"></div>
-
 </body>
 </html>
 

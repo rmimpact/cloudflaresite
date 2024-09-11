@@ -112,8 +112,9 @@ left: 0;
   
   .navbar {
     width: 100%;
+    box-shadow: 0 1px 4px #784d03;
     
-    box-shadow: 0 1px 4px ;
+    
   }
   
   .nav-container {
@@ -133,7 +134,7 @@ left: 0;
   /*-----Menu text Items--------------------*/
   .navbar .nav-container a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 3rem;
     padding: 0.7rem;

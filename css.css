@@ -1,5 +1,17 @@
 @charset "utf-8";
 
+.bg_custom {
+  background: radial-gradient(circle at 50% 180%, #784d03, #02031c); 
+  /* Use!!!! https://learnui.design/tools/gradient-generator.html */
+color: white;
+height: 100vh;
+width: 100vw;
+position: fixed;
+margin-left: -4vw;
+
+}
+
+
 nav {
     background-color: black;
     text-align: right;
@@ -290,4 +302,6 @@ background: linear-gradient(167deg, rgba(2,3,28,1) 0%, rgba(120,77,3,1) 100%);
     
   }
   
-  
+/*--------------Testing Styles ----------------------------*/
+
+

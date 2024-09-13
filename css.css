@@ -1,36 +1,37 @@
 @charset "utf-8";
 
 .bg_custom {
-  background: radial-gradient(circle at 50% 180%, #784d03, #02031c); 
+  background: radial-gradient(circle at 50% 210%, #784d03, #02031c); 
   /* Use!!!! https://learnui.design/tools/gradient-generator.html */
 color: white;
 height: 100vh;
 width: 100vw;
 position: fixed;
 margin-left: -4vw;
+z-index: -1;
 
 }
 
 
 nav {
-    background-color: black;
+    /*background-color: black;*/
     text-align: right;
 }
 .main_header {
     font-family: arial; 
     font-size: 3.4rem; 
     margin-top: 20vh;
+    z-index: 999;
+    color: white;
+    position: fixed;
 
 }
 body {
-    background-color: rgb(2, 3, 28);
     color: white;
     padding-left: 4vw;
     padding-right: 4vw;
-    padding-top: 4vh;
+    padding-top: 0vh;
     padding-bottom: 4vh;
- 
-    
     
 }
 @keyframes totheright {
@@ -56,21 +57,21 @@ body {
 
 .loader {
 width: 100vw;
-height: 12px;
+height: 30px;
 --c:#ffffff 50%,#ff000000 0;
 background: 
 linear-gradient(90deg ,var(--c)) 0 0%,
 linear-gradient(-90deg,var(--c)) 0 50%,
 linear-gradient(90deg ,var(--c)) 0 100%;
-background-size: 8px calc(100%/3);
+background-size: 20px calc(100%/3);
 background-repeat: repeat-x;
-animation: l8 .25s infinite linear;
+animation: l8 .5s infinite linear;
 position: fixed;
 top: 80vh;
 left: 0;
 }
 @keyframes l8 {
-100% {background-position: -8px 0%,-8px 50%,-8px 100%}
+100% {background-position: -20px 0%,-20px 50%,-20px 100%}
 }
 .floating_logo {
     height: 13vh;
@@ -128,7 +129,7 @@ left: 0;
   
   .navbar {
     width: 100%;
-    box-shadow: 0 1px 4px #784d03;
+    /*box-shadow: 0 1px 4px #784d03;*/
     
     
   }
@@ -171,9 +172,9 @@ left: 0;
       display: block;
       position: relative;
       height: 89px;
-      background: rgb(2,3,28);
+      /*background: rgb(2,3,28);
 background: linear-gradient(167deg, rgba(2,3,28,1) 0%, rgba(120,77,3,1) 100%);
-      
+     */ 
   }
   
   .nav-container .checkbox {

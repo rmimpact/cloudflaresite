@@ -227,23 +227,24 @@ background: linear-gradient(167deg, rgba(2,3,28,1) 0%, rgba(120,77,3,1) 100%);
   
   .navbar .menu-items {
       opacity: 0;
-      padding-top: 120px;
+      padding-top: 25vh;
       color: white;
-      background: #B4975A;
-      height: 4000vh;
+      /* background: #B4975A; */
+      height: 100vh;
       width: 40vw;
       display: flex;
       flex-direction: column;
-      transition: opacity 0.35s ease-in; /* Changed transition to only affect opacity */
+      transition: opacity 0.3s ease-in; /* Changed transition to only affect opacity */
       text-align: left;
       margin-left: -200%;
+      position: fixed;
   }
   
   .navbar .menu-items li {
     margin-bottom: 1.2rem;
     font-size: 1.5rem;
     font-weight: 500;
-    margin-left: 8%;
+    margin-left: 4vw;
     transition: margin-left 0.35s ease-in-out;
   }
   
@@ -260,8 +261,18 @@ background: linear-gradient(167deg, rgba(2,3,28,1) 0%, rgba(120,77,3,1) 100%);
     transform: translateX(0);
     opacity: 1;
       margin-left: 0px;
-      transition: opacity 0.5s ease-in;
+      transition: opacity 0.3s ease;
     
+  
+  }
+
+  .nav-container input[type="checkbox"]:not(:checked) ~ .menu-items {
+    transform: translateX(0);
+    opacity: 0;
+    pointer-events: none;
+      margin-left: 0px;
+      transition: opacity 0.3s ease;
+
   
   }
   
@@ -297,7 +308,7 @@ background: linear-gradient(167deg, rgba(2,3,28,1) 0%, rgba(120,77,3,1) 100%);
     top: 30%;
     left: 46%;
     z-index: 5;
-    font-size: 200%;
+    font-size: 1.8rem;
     font-family: arial;
     opacity: 1;
     

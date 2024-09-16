@@ -162,8 +162,8 @@ left: 0;
   .navbar .nav-container a:hover{
       
       
-      font-size: 5rem;
-    transition: font-size .35s ease-in-out;
+      font-size: 4rem;
+    transition: font-size .4s ease-in-out;
   }
   
   /*-----Size of flyout menu--------------------*/

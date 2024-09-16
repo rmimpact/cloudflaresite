@@ -175,6 +175,7 @@ left: 0;
       /*background: rgb(2,3,28);
 background: linear-gradient(167deg, rgba(2,3,28,1) 0%, rgba(120,77,3,1) 100%);
      */ 
+     
   }
   
   .nav-container .checkbox {
@@ -226,26 +227,35 @@ background: linear-gradient(167deg, rgba(2,3,28,1) 0%, rgba(120,77,3,1) 100%);
   }
   
   .navbar .menu-items {
-      opacity: 0;
-      padding-top: 25vh;
+      opacity: 1;
+      padding-top: 15vh;
       color: white;
       /* background: #B4975A; */
-      height: 100vh;
+      height: -10vh;
       width: 40vw;
       display: flex;
       flex-direction: column;
-      transition: opacity 0.3s ease-in; /* Changed transition to only affect opacity */
+      
+      transition: margin-bottom 0.25s ease, opacity 0.3s ease-in; /* Changed transition to only affect opacity */
       text-align: left;
       margin-left: -200%;
       position: fixed;
+      
+      
   }
   
   .navbar .menu-items li {
-    margin-bottom: 1.2rem;
+    margin-bottom: -10vh;
     font-size: 1.5rem;
     font-weight: 500;
     margin-left: 4vw;
-    transition: margin-left 0.35s ease-in-out;
+    transition: margin-bottom 1s ease;
+    
+  }
+
+  .navbar input[type="checkbox"]:checked ~ .menu-items li {
+  transform: translateX(0);
+  margin-bottom: 1vh;
   }
   
   .logo2 {
@@ -261,9 +271,8 @@ background: linear-gradient(167deg, rgba(2,3,28,1) 0%, rgba(120,77,3,1) 100%);
     transform: translateX(0);
     opacity: 1;
       margin-left: 0px;
-      transition: opacity 0.3s ease;
-    
-  
+      margin-bottom: 10vh;
+      transition: margin-bottom 0.7 ease, opacity 0.3s ease;
   }
 
   .nav-container input[type="checkbox"]:not(:checked) ~ .menu-items {
@@ -271,7 +280,9 @@ background: linear-gradient(167deg, rgba(2,3,28,1) 0%, rgba(120,77,3,1) 100%);
     opacity: 0;
     pointer-events: none;
       margin-left: 0px;
-      transition: opacity 0.3s ease;
+      margin-bottom: 40vh;
+      transition: margin-bottom 0.7 ease, opacity 0.3s ease;
+      
 
   
   }

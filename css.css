@@ -120,6 +120,7 @@ left: 0;
   
   body {
     font-family: "Poppins", sans-serif;
+    overflow: hidden;
   }
   
   .container {
@@ -310,20 +311,13 @@ background: linear-gradient(167deg, rgba(2,3,28,1) 0%, rgba(120,77,3,1) 100%);
     display: none;
   }
 
-  .navbar .main_content {
+  .main_content {
     color: white;
     margin-left: 0vw;
-    transition: margin-left 0.35s ease;
+    
   }
-  .navbar input[type="checkbox"]:checked ~ .main_content {
-    transform: translateX(0);
-    margin-left: 10vw;
-    }
-  
-  .checkbox input[type="checkbox"]:not(:checked) ~ .main_content {
-    transform: translateX(0);
-    margin-left: 0vw;
-  }
+
+    
   
   /* CSS Document */
   

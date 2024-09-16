@@ -1,44 +1,49 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Website in progress...">
-  <meta name="keywords" content="remym, moscovitz, remymoscovitz, rmoscovitz">
-  <link rel="icon" href="rm_custom_icon.png" type="image/png">
-  <title>Contact</title>
-  <meta property="og:title" content="Remy Mosvitz" />
-  <meta property="og:description" content="Wesite in progress..." />
-  <meta property="og:image" content="rm_custom_icon.png" />
-  <meta property="og:url" content="remymoscovitz.com" />
-  <html lang="en">
-  <link href="css.css" rel="stylesheet" type="text/css">
-	  </head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website in progress...">
+    <meta name="keywords" content="remym, moscovitz, remymoscovitz, rmoscovitz">
+    <link rel="icon" href="rm_custom_icon.png" type="image/png">
+    <title>Contact</title>
+    <link href="css.css" rel="stylesheet" type="text/css">
+</head>
 <body>
-  <div class="bg_custom"></div>
+    <div class="bg_custom"></div>
     <nav>
         <div class="navbar">
-          <div class="container nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-              </div>  
-              <div class="Title1">Contact</div>
-            <div class="logo2">
-              <img src="white_nav_icon.png" class="logo2" alt="">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" id="nav-toggle" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="Title1">Contact</div>
+                <div class="logo2">
+                    <img src="white_nav_icon.png" class="logo2" alt="">
+                </div>
+                <div class="menu-items">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </div>
             </div>
-            <div class="menu-items">
-              <li><a href="Home.html">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">LinkedIN</a></li>
-              <li><a href="#">GitHub</a></li>
-            </div>
-          </div>
         </div>
-      </nav>
-      <div class="main_heading">Email: mail@remymoscovitz.com</div>
+    </nav>
+    <script>document.getElementById('nav-toggle').addEventListener('change', function() {
+      const mainContent = document.querySelector('.main_content');
+      if (this.checked) {
+          mainContent.style.transform = 'translateX(20vw)';
+          mainContent.style.transition = 'transform 0.5s ease';
+      } else {
+          mainContent.style.transform = 'translateX(0)';
+      }
+  });</script>
+    <div class="main_content"> <!-- Main content wrapper -->
+        <div class="main_heading">Email: mail@remymoscovitz.com</div>
+    </div>
 </body>
-
 </html>

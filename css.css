@@ -26,6 +26,17 @@ nav {
     position: relative;
 
 }
+
+.main_header2{
+    font-family: arial; 
+    font-size: 3.4rem; 
+    margin-top: 20vh;
+    z-index: 999;
+    color: white;
+    position: fixed;
+
+}
+
 body {
     color: white;
     padding-left: 4vw;
@@ -38,7 +49,7 @@ body {
 
 @keyframes totheright {
     0% {left: 2vw;}
-    50% {left:86.5vw;}
+    50% {left:85.5vw;}
     100% {left: 2vw}
 }
 .floating_div {
@@ -141,6 +152,7 @@ left: 0;
       justify-content: space-between;
       align-items: center;
       height: 30vh;
+      
   }
   
   .navbar .menu-items {

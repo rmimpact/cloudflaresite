@@ -33,15 +33,24 @@
             </div>
         </div>
     </nav>
-    <script>document.getElementById('nav-toggle').addEventListener('change', function() {
-      const mainContent = document.querySelector('.main_content');
-      if (this.checked) {
-          mainContent.style.transform = 'translateX(20vw)';
-          mainContent.style.transition = 'transform 0.5s ease';
-      } else {
-          mainContent.style.transform = 'translateX(0)';
-      }
-  });</script>
+    <script>
+      document.getElementById('nav-toggle').addEventListener('change', function() {
+          const mainContent = document.querySelector('.main_content');
+          const textElement = document.querySelector('.main_heading'); // The element containing the text
+          const textWidth = parseFloat(getComputedStyle(textElement).width); // Get the width in pixels
+      
+          // Define a maximum translation value
+          const maxTranslation = window.innerWidth < 768 ? 10 : 20; // Use 10vw for mobile, 20vw for desktop
+          const translationValue = Math.min(textWidth + (maxTranslation * window.innerWidth / 100), window.innerWidth - textWidth) + 'px';
+      
+          if (this.checked) {
+              mainContent.style.transform = `translateX(${translationValue})`; // Move right based on text width
+              mainContent.style.transition = 'transform 0.5s ease'; // Set transition for smooth effect
+          } else {
+              mainContent.style.transform = 'translateX(0)'; // Reset position when unchecked
+          }
+      });
+      </script>
     <div class="main_content"> <!-- Main content wrapper -->
         <div class="main_heading">Email: mail@remymoscovitz.com</div>
     </div>

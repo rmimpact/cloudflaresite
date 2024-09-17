@@ -11,8 +11,9 @@ margin-left: -4vw;
 z-index: -1;
 
 }
-
-
+.heading_me{
+  font-size: 100rem;
+}
 nav {
     /*background-color: black;*/
     text-align: right;

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website in progress...">
+    <meta name="keywords" content="remym, moscovitz, remymoscovitz, rmoscovitz">
+    <link rel="icon" href="rm_custom_icon.png" type="image/png">
+    <title>Contact</title>
+    <link href="css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="bg_custom"></div>
+    <nav>
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" id="nav-toggle" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="Title1">Contact</div>
+                <div class="logo2">
+                    <img src="white_nav_icon.png" class="logo2" alt="">
+                </div>
+                <div class="menu-items">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+      document.getElementById('nav-toggle').addEventListener('change', function() {
+          const mainContent = document.querySelector('.main_content');
+          const textElement = document.querySelector('.main_heading'); // The element containing the text
+          const textWidth = parseFloat(getComputedStyle(textElement).width); // Get the width in pixels
+      
+          // Define a maximum translation value
+          const maxTranslation = window.innerWidth < 768 ? 10 : 20; // Use 10vw for mobile, 20vw for desktop
+          const translationValue = Math.min(textWidth + (maxTranslation * window.innerWidth / 100), window.innerWidth - textWidth) + 'px';
+      
+          if (this.checked) {
+              mainContent.style.transform = `translateX(${translationValue})`; // Move right based on text width
+              mainContent.style.transition = 'transform 0.5s ease'; // Set transition for smooth effect
+          } else {
+              mainContent.style.transform = 'translateX(0)'; // Reset position when unchecked
+          }
+      });
+      </script>
+    <div class="main_content"> <!-- Main content wrapper -->
+        <div class="main_heading">Email: mail@remymoscovitz.com</div>
+    </div>
+</body>
+</html>

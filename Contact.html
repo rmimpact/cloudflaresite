@@ -1,58 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website in progress...">
-    <meta name="keywords" content="remym, moscovitz, remymoscovitz, rmoscovitz">
-    <link rel="icon" href="rm_custom_icon.png" type="image/png">
-    <title>Contact</title>
-    <link href="css.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    <div class="bg_custom"></div>
-    <nav>
-        <div class="navbar">
-            <div class="container nav-container">
-                <input class="checkbox" type="checkbox" id="nav-toggle" />
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-                <div class="Title1">Contact</div>
-                <div class="logo2">
-                    <img src="white_nav_icon.png" class="logo2" alt="">
-                </div>
-                <div class="menu-items">
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">GitHub</a></li>
-                </div>
-            </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website in progress...">
+  <meta name="keywords" content="remym, moscovitz, remymoscovitz, rmoscovitz">
+  <link rel="icon" href="rm_custom_icon.png" type="image/png">
+  <title>Contact</title>
+  <meta property="og:title" content="Remy Mosvitz" />
+  <meta property="og:description" content="Wesite in progress..." />
+  <meta property="og:image" content="rm_custom_icon.png" />
+  <meta property="og:url" content="remymoscovitz.com" />
+  <html lang="en">
+  <link href="hamburger.css" rel="stylesheet" type="text/css">
+	  </head>
+
+    <body>
+      <div id="mySidenav" class="sidenav">
+        <a href="#">Home</a>
+        <a href="#">Photos</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Projects</a>
+      </div>
+      <div class="tray">
+        <div class="name"></div>
+        <div class="hamburger hamburger--minus js-hamburger">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
         </div>
-    </nav>
-    <script>
-      document.getElementById('nav-toggle').addEventListener('change', function() {
-          const mainContent = document.querySelector('.main_content');
-          const textElement = document.querySelector('.main_heading'); // The element containing the text
-          const textWidth = parseFloat(getComputedStyle(textElement).width); // Get the width in pixels
+      </div>
+      <script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        var isOpen = false; // Track the state of the menu
       
-          // Define a maximum translation value
-          const maxTranslation = window.innerWidth < 768 ? 10 : 20; // Use 10vw for mobile, 20vw for desktop
-          const translationValue = Math.min(textWidth + (maxTranslation * window.innerWidth / 100), window.innerWidth - textWidth) + 'px';
-      
-          if (this.checked) {
-              mainContent.style.transform = `translateX(${translationValue})`; // Move right based on text width
-              mainContent.style.transition = 'transform 0.5s ease'; // Set transition for smooth effect
+        // On click
+        hamburger.addEventListener("click", function() {
+          // Toggle class "is-active"
+          hamburger.classList.toggle("is-active");
+          
+          // Check if the menu is currently open or closed
+          if (isOpen) {
+            closeNav();
           } else {
-              mainContent.style.transform = 'translateX(0)'; // Reset position when unchecked
+            openNav();
           }
-      });
+          
+          // Toggle the state
+          isOpen = !isOpen;
+        });
+      
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
       </script>
-    <div class="main_content"> <!-- Main content wrapper -->
-        <div class="main_heading">Email: mail@remymoscovitz.com</div>
-    </div>
-</body>
+      <div id="main">
+        <h2>Contact</h2>
+        <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+      </div>
+      </body>
+
 </html>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,67 +13,67 @@
   <meta property="og:url" content="remymoscovitz.com" />
   <html lang="en">
   <link href="hamburger.css" rel="stylesheet" type="text/css">
-	  </head>
+</head>
 
-    <body onload="fadeIn()">
-      <div id="mySidenav" class="sidenav">
-        <a href="home.html">Home</a>
-        <a href="#">LinkedIn</a>
-        <a href="projects.html">Projects</a>
-        <a href="#">About</a>
+<body onload="fadeIn()">
+  <div id="mySidenav" class="sidenav">
+    <a href="home.html">Home</a>
+    <a href="#">LinkedIn</a>
+    <a href="projects.html">Projects</a>
+    <a href="#">About</a>
+  </div>
+  <div class="tray">
+    <div class="name"></div>
+    <div class="hamburger hamburger--minus js-hamburger">
+      <div class="hamburger-box">
+        <div class="hamburger-inner"></div>
       </div>
-      <div class="tray">
-        <div class="name"></div>
-        <div class="hamburger hamburger--minus js-hamburger">
-          <div class="hamburger-box">
-            <div class="hamburger-inner"></div>
-          </div>
-        </div>
-      </div>
-      <script>
-        // Look for .hamburger
-        var hamburger = document.querySelector(".hamburger");
-        var isOpen = false; // Track the state of the menu
-      
-        // On click
-        hamburger.addEventListener("click", function() {
-          // Toggle class "is-active"
-          hamburger.classList.toggle("is-active");
-          
-          // Check if the menu is currently open or closed
-          if (isOpen) {
-            closeNav();
-          } else {
-            openNav();
-          }
-          
-          // Toggle the state
-          isOpen = !isOpen;
-        });
-      
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-        }
-        
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-          document.getElementById("main").style.marginLeft= "0";
-        }
-      </script>
+    </div>
+  </div>
+  <script>
+    // Look for .hamburger
+    var hamburger = document.querySelector(".hamburger");
+    var isOpen = false; // Track the state of the menu
 
-      <script>
-        function fadeIn() {
-          document.getElementById("main").style.opacity = "1";
-          document.getElementById("main").style.marginTop = "0";
+    // On click
+    hamburger.addEventListener("click", function () {
+      // Toggle class "is-active"
+      hamburger.classList.toggle("is-active");
 
-        }
-      </script>
-      
-      <div id="main">
-        <h2 style="font-size: 2rem;">Contact</h2>
-        <p style="font-size: 1 rem;">Click on the element below to open the side navigation menu, and push this content to the right.</p>
-      </div>
-      </body>
+      // Check if the menu is currently open or closed
+      if (isOpen) {
+        closeNav();
+      } else {
+        openNav();
+      }
+
+      // Toggle the state
+      isOpen = !isOpen;
+    });
+
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+    function fadeIn() {
+      document.getElementById("main").style.opacity = "1";
+      document.getElementById("main").style.marginTop = "0px";
+
+    }
+  </script>
+
+  <div id="main">
+    <div id="fadeIn">
+      <h2 style="font-size: 2rem;">Contact</h2>
+      <p style="font-size: 1 rem;">Click on the element below to open the side navigation menu, and push this content to
+        the right.</p>
+    </div>
+  </div>
+</body>
 
 </html>

@@ -14,7 +14,7 @@
   <link href="hamburger.css" rel="stylesheet" type="text/css">
 	  </head>
 
-    <body>
+    <body onload="fadeIn()">
       <div id="mySidenav" class="sidenav">
         <a href="home.html">Home</a>
         <a href="#">Photos</a>
@@ -60,6 +60,15 @@
           document.getElementById("main").style.marginLeft= "0";
         }
       </script>
+
+      <script>
+        function fadeIn() {
+          document.getElementById("main").style.opacity = "1";
+          document.getElementById("main").style.marginTop = "0";
+
+        }
+      </script>
+      
       <div id="main">
         <h2 style="font-size: 2rem;">Contact</h2>
         <p style="font-size: 1 rem;">Click on the element below to open the side navigation menu, and push this content to the right.</p>

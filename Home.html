@@ -14,7 +14,7 @@
   <link href="hamburger.css" rel="stylesheet" type="text/css">
 	  </head>
 
-    <body>
+    <body onload="fadeIn()">
       <div id="mySidenav" class="sidenav">
         <a href="#">Photos</a>
         <a href="#">LinkedIn</a>
@@ -49,6 +49,13 @@
           // Toggle the state
           isOpen = !isOpen;
         });
+
+         function fadeIn() {
+          document.getElementById("main").style.opacity = "1";
+          
+
+        }
+          
       
         function openNav() {
           document.getElementById("mySidenav").style.width = "250px";

@@ -47,6 +47,7 @@ body {
     padding-right: 4vw;
     padding-top: 0vh;
     padding-bottom: 4vh;
+    opacity: 0;
     /* to animate*/
      
 }

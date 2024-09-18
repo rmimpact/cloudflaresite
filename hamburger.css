@@ -787,3 +787,32 @@
       width:100%;
       z-index: 999999;
   }
+
+  /*--------------------------- Flex Box -------------------*/
+
+  .project-items {
+    display: inline-flex;
+    gap: 100px;
+  }
+
+  .project-items > div {
+   z-index: 9;
+   columns: 3;
+   width: 230px;
+   background-color: lightgrey;
+   box-shadow: 4px 4px 5px #333;
+   
+   border-radius: 10px;
+   
+
+  }
+
+  /* 
+  .item-background {
+    background: gold;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    
+  }
+    */

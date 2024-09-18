@@ -5,7 +5,7 @@
   <meta name="description" content="Website in progress...">
   <meta name="keywords" content="remym, moscovitz, remymoscovitz, rmoscovitz">
   <link rel="icon" href="rm_custom_icon.png" type="image/png">
-  <title>Contact</title>
+  <title>Projects</title>
   <meta property="og:title" content="Remy Mosvitz" />
   <meta property="og:description" content="Wesite in progress..." />
   <meta property="og:image" content="rm_custom_icon.png" />
@@ -17,8 +17,8 @@
     <body onload="fadeIn()">
       <div id="mySidenav" class="sidenav">
         <a href="home.html">Home</a>
-        <a href="#">LinkedIn</a>
-        <a href="projects.html">Projects</a>
+        <a href="contact.html">LinkedIn</a>
+        <a href="contact.html">Contact</a>
         <a href="#">About</a>
       </div>
       <div class="tray">
@@ -49,6 +49,13 @@
           // Toggle the state
           isOpen = !isOpen;
         });
+
+         function fadeIn() {
+          document.getElementById("main").style.opacity = "1";
+          
+
+        }
+          
       
         function openNav() {
           document.getElementById("mySidenav").style.width = "250px";
@@ -60,18 +67,9 @@
           document.getElementById("main").style.marginLeft= "0";
         }
       </script>
-
-      <script>
-        function fadeIn() {
-          document.getElementById("main").style.opacity = "1";
-          document.getElementById("main").style.marginTop = "0";
-
-        }
-      </script>
-      
       <div id="main">
-        <h2 style="font-size: 2rem;">Contact</h2>
-        <p style="font-size: 1 rem;">Click on the element below to open the side navigation menu, and push this content to the right.</p>
+        <h2>Projects</h2>
+        <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
       </div>
       </body>
 

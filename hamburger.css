@@ -723,7 +723,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 0;
+    z-index: 2;
     top: 0;
     left: 0;
     background-color: #b34b4b00;
@@ -791,21 +791,51 @@
   /*--------------------------- Flex Box -------------------*/
 
   .project-items {
-    display: inline-flex;
-    gap: 100px;
-  }
+    display: flex; /* You can keep this for larger screens */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 10px; /* Space between items */
+}
 
-  .project-items > div {
-   z-index: 9;
-   columns: 3;
-   width: 230px;
-   background-color: lightgrey;
-   box-shadow: 4px 4px 5px #333;
-   
-   border-radius: 10px;
-   
+.project-items > div {
+    z-index: 0;
+    padding: 10px;
+    width: 270px; /* You can keep this fixed width or adjust it */
+    background-color: rgba(211, 211, 211, 0.127);
+    height: 100px;
+    color: lightgrey;
+    border: 1px solid rgba(211, 211, 211, 0.089);
+    box-shadow: 4px 4px 5px #25160008;
+    border-radius: 10px;
+    backdrop-filter: blur(9999px);     
+}
 
-  }
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .project-items {
+        display: block; /* Change to block for stacking */
+    }
+
+    .project-items > div {
+        width: 100%; /* Make items full width on smaller screens */
+        
+    }
+}
+
+.spacer {
+  margin-top: 70px;
+}
+.top_fade {
+  position: fixed;
+  top: 0; /* Position it at the top */
+  left: 0; /* Align it to the left */
+  height: 80px; /* Set the height */
+  width: 100vw; /* Full viewport width */
+  background-color: transparent; /* Fully transparent background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  z-index: 1; /* Ensure it sits above other elements */
+}
+
+
 
   /* 
   .item-background {

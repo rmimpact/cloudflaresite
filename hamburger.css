@@ -833,6 +833,15 @@
   background-color: transparent; /* Fully transparent background */
   backdrop-filter: blur(10px); /* Apply blur effect */
   z-index: 1; /* Ensure it sits above other elements */
+  
+}
+
+.top-right-logo {
+  position: fixed; /* Keep the logo fixed in position */
+  top: 10px; /* Adjust the distance from the top */
+  right: 37px; /* Adjust the distance from the right */
+  width: 44px; /* Set the height of the logo */
+  z-index: 10; /* Ensure it appears above other content */
 }
 
 

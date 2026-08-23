@@ -1,5 +1,70 @@
 [
   {
+    "id": "ephemeral-geo",
+    "order": 0,
+    "title": "Ephemeral Geo",
+    "eyebrow": "Location-based iPhone app",
+    "year": "2026",
+    "image": "/media/projects/ephemeral-geo/ephemeral-geo-banner.png",
+    "imageAlt": "Ephemeral Geo glowing route logo and wordmark on a black topographic background",
+    "ogImage": "/media/projects/ephemeral-geo/ephemeral-geo-banner.png",
+    "ogImageAlt": "Ephemeral Geo — location-based quests",
+    "summary": "An iPhone app that turns nearby places into time-limited exploration quests.",
+    "description": "Ephemeral Geo makes everyday exploration feel like a quest. Choose how far you want to travel and the app finds a nearby destination, gives you a time limit and sets a small observation challenge to complete when you arrive.\n\nQuests can open in Apple Maps, Google Maps or Waze. Arrival can be verified using location, and each completed journey can include a photo or note. The journal keeps a history and map of explored places, while favourites and achievements turn individual trips into a longer exploration record.\n\nThe app is being prepared for the App Store. I’ll add the download link here as soon as the listing is live.",
+    "tags": ["Swift", "SwiftUI", "MapKit", "Core Location", "SwiftData"],
+    "facts": [
+      { "label": "Platform", "value": "iPhone · iOS 17+" },
+      { "label": "Interface", "value": "SwiftUI" },
+      { "label": "Maps", "value": "MapKit · Apple Maps · Google Maps · Waze" },
+      { "label": "Status", "value": "Preparing for App Store release" }
+    ],
+    "preview": {
+      "type": "carousel",
+      "images": [
+        {
+          "src": "/media/projects/ephemeral-geo/explore-radius.png",
+          "alt": "Ephemeral Geo map for setting an exploration radius around Sydney"
+        },
+        {
+          "src": "/media/projects/ephemeral-geo/active-quest.png",
+          "alt": "Active Ephemeral Geo quest with destination, distance, countdown and objective"
+        },
+        {
+          "src": "/media/projects/ephemeral-geo/quest-verified.png",
+          "alt": "Verified arrival screen with an exploration objective in Ephemeral Geo"
+        },
+        {
+          "src": "/media/projects/ephemeral-geo/journal-detail.png",
+          "alt": "Ephemeral Geo journal entry for a verified visit"
+        },
+        {
+          "src": "/media/projects/ephemeral-geo/journal-history.png",
+          "alt": "Ephemeral Geo exploration history"
+        },
+        {
+          "src": "/media/projects/ephemeral-geo/achievements.png",
+          "alt": "Exploration achievement progress in Ephemeral Geo"
+        },
+        {
+          "src": "/media/projects/ephemeral-geo/exploration-map.png",
+          "alt": "Map of places explored and verified in Ephemeral Geo"
+        },
+        {
+          "src": "/media/projects/ephemeral-geo/explore-radius-10km.png",
+          "alt": "Ten kilometre exploration radius in Ephemeral Geo"
+        }
+      ]
+    },
+    "links": [
+      {
+        "label": "App Store link coming soon",
+        "url": "",
+        "primary": true,
+        "disabled": true
+      }
+    ]
+  },
+  {
     "id": "mms-psychology",
     "order": 1,
     "title": "MMS Psychology",

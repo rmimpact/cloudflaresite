@@ -1,5 +1,70 @@
 [
   {
+    "id": "ephemeral-geo",
+    "order": 0,
+    "title": "Ephemeral Geo",
+    "eyebrow": "Application iPhone géolocalisée",
+    "year": "2026",
+    "image": "/media/projects/ephemeral-geo/ephemeral-geo-banner.png",
+    "imageAlt": "Logo lumineux et mot-symbole Ephemeral Geo sur un fond topographique noir",
+    "ogImage": "/media/projects/ephemeral-geo/ephemeral-geo-banner.png",
+    "ogImageAlt": "Ephemeral Geo — quêtes géolocalisées",
+    "summary": "Une application iPhone qui transforme les lieux à proximité en quêtes d’exploration limitées dans le temps.",
+    "description": "Ephemeral Geo transforme l’exploration du quotidien en quête. Choisissez la distance que vous souhaitez parcourir : l’application trouve une destination à proximité, fixe une limite de temps et propose un petit défi d’observation à accomplir sur place.\n\nLes quêtes peuvent s’ouvrir dans Apple Plans, Google Maps ou Waze. L’arrivée peut être vérifiée grâce à la localisation, et chaque sortie terminée peut inclure une photo ou une note. Le journal conserve l’historique et la carte des lieux explorés, tandis que les favoris et les succès transforment chaque sortie en un véritable parcours d’exploration.\n\nL’application est en préparation pour l’App Store. J’ajouterai ici le lien de téléchargement dès que la fiche sera en ligne.",
+    "tags": ["Swift", "SwiftUI", "MapKit", "Core Location", "SwiftData"],
+    "facts": [
+      { "label": "Plateforme", "value": "iPhone · iOS 17+" },
+      { "label": "Interface", "value": "SwiftUI" },
+      { "label": "Cartes", "value": "MapKit · Apple Plans · Google Maps · Waze" },
+      { "label": "Statut", "value": "En préparation pour l’App Store" }
+    ],
+    "preview": {
+      "type": "carousel",
+      "images": [
+        {
+          "src": "/media/projects/ephemeral-geo/explore-radius.png",
+          "alt": "Carte Ephemeral Geo pour définir un rayon d’exploration autour de Sydney"
+        },
+        {
+          "src": "/media/projects/ephemeral-geo/active-quest.png",
+          "alt": "Quête Ephemeral Geo active avec destination, distance, compte à rebours et objectif"
+        },
+        {
+          "src": "/media/projects/ephemeral-geo/quest-verified.png",
+          "alt": "Écran d’arrivée vérifiée avec un objectif d’exploration dans Ephemeral Geo"
+        },
+        {
+          "src": "/media/projects/ephemeral-geo/journal-detail.png",
+          "alt": "Entrée du journal Ephemeral Geo pour une visite vérifiée"
+        },
+        {
+          "src": "/media/projects/ephemeral-geo/journal-history.png",
+          "alt": "Historique d’exploration dans Ephemeral Geo"
+        },
+        {
+          "src": "/media/projects/ephemeral-geo/achievements.png",
+          "alt": "Progression des succès d’exploration dans Ephemeral Geo"
+        },
+        {
+          "src": "/media/projects/ephemeral-geo/exploration-map.png",
+          "alt": "Carte des lieux explorés et vérifiés dans Ephemeral Geo"
+        },
+        {
+          "src": "/media/projects/ephemeral-geo/explore-radius-10km.png",
+          "alt": "Rayon d’exploration de dix kilomètres dans Ephemeral Geo"
+        }
+      ]
+    },
+    "links": [
+      {
+        "label": "Lien App Store bientôt disponible",
+        "url": "",
+        "primary": true,
+        "disabled": true
+      }
+    ]
+  },
+  {
     "id": "mms-psychology",
     "order": 1,
     "title": "MMS Psychology",

@@ -1,0 +1,15 @@
+{
+  "apps": [
+    { "id": "ephemeral-geo", "name": "Ephemeral Geo" },
+    { "id": "filedrop", "name": "FileDrop" },
+    { "id": "labs-check-app", "name": "Labs Check App" },
+    { "id": "rem", "name": "REM" },
+    { "id": "other", "name": "Other app" }
+  ],
+  "requestTypes": [
+    { "id": "help", "name": "Help using the app" },
+    { "id": "issue", "name": "Report an issue" },
+    { "id": "feature-request", "name": "Feature request" },
+    { "id": "other", "name": "Other" }
+  ]
+}

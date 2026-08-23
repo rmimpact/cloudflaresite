@@ -1,5 +1,5 @@
 const IS_FRENCH = document.documentElement.lang.toLowerCase().startsWith("fr");
-const PROJECTS_ENDPOINT = IS_FRENCH ? "/projects/projects.fr.json?v=20260822-2" : "/projects/projects.json?v=20260822-2";
+const PROJECTS_ENDPOINT = IS_FRENCH ? "/projects/projects.fr.json?v=20260824-1" : "/projects/projects.json?v=20260824-1";
 const PROJECT_INDEX_PATH = IS_FRENCH ? "/fr/projects/" : "/projects/";
 const SITE_ORIGIN = "https://remymoscovitz.com";
 const DEFAULT_PROJECT_OG_IMAGE = "/media/og-remy-portfolio.png";
@@ -540,10 +540,17 @@ function createProjectVisual(project) {
 }
 
 function createProjectLink(link) {
-  const anchor = document.createElement("a");
+  const anchor = document.createElement(link.disabled ? "span" : "a");
   anchor.className = `button ${link.primary ? "button--primary" : "button--secondary"}`;
-  anchor.href = link.url;
   anchor.textContent = link.label;
+
+  if (link.disabled) {
+    anchor.classList.add("button--disabled");
+    anchor.setAttribute("aria-disabled", "true");
+    return anchor;
+  }
+
+  anchor.href = link.url;
 
   if (/^https?:\/\//.test(link.url)) {
     anchor.target = "_blank";

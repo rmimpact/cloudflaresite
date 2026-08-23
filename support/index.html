@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Remy Moscovitz for app support, help, issue reports and feature requests.">
+  <meta name="theme-color" content="#060817">
+  <link rel="canonical" href="https://remymoscovitz.com/support/">
+  <link rel="icon" href="/media/rm_custom_icon.png" type="image/png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="App Support — Remy Moscovitz">
+  <meta property="og:description" content="Get help, report an issue or share a feature request for one of Remy Moscovitz’s apps.">
+  <meta property="og:url" content="https://remymoscovitz.com/support/">
+  <meta property="og:image" content="https://remymoscovitz.com/media/og-remy-portfolio.png?v=2">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="App Support — Remy Moscovitz">
+  <meta name="twitter:description" content="Get help, report an issue or share a feature request.">
+  <meta name="twitter:image" content="https://remymoscovitz.com/media/og-remy-portfolio.png?v=2">
+  <title>App Support — Remy Moscovitz</title>
+  <link rel="stylesheet" href="/styles/site.css?v=20260824-1">
+  <script src="/script.js?v=20260821-1" defer></script>
+  <script src="/support/support.js?v=20260824-1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to support form</a>
+
+  <header class="site-header" data-site-header>
+    <a class="brand" href="/" aria-label="Remy Moscovitz — home">
+      <img src="/media/white_nav_icon.png" alt="" width="44" height="44">
+      <span>Remy Moscovitz</span>
+    </a>
+
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>
+      <span class="sr-only">Open navigation</span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-site-nav>
+      <a href="/">Home</a>
+      <a href="/projects/">Projects</a>
+      <a href="/support/" aria-current="page">Support</a>
+      <a href="https://github.com/rmimpact" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main-content" class="support-page">
+    <section class="section-shell support-layout" aria-labelledby="support-title">
+      <div class="support-intro">
+        <p class="eyebrow">App support</p>
+        <h1 id="support-title">How can I help?</h1>
+        <p class="support-intro__lead">Choose an app and tell me what’s going on. Your message comes directly to me, and I’ll reply to the email address you provide.</p>
+
+        <aside class="support-note" aria-label="What to expect">
+          <span class="support-note__mark" aria-hidden="true">→</span>
+          <div>
+            <h2>What to expect</h2>
+            <p>Please include any steps that led to the problem. Details such as your device and app version can help me investigate faster.</p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="support-form-card">
+        <form class="support-form" action="https://formsubmit.co/mail@remymoscovitz.com" method="post" data-support-form>
+          <input type="hidden" name="_subject" value="[App Support] New request">
+          <input type="hidden" name="_next" value="https://remymoscovitz.com/support/thanks.html">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" class="support-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="form-field form-field--full">
+            <label for="support-app">Application</label>
+            <select id="support-app" name="app" required disabled data-app-select>
+              <option value="">Select an app</option>
+            </select>
+          </div>
+
+          <div class="form-field form-field--full">
+            <label for="request-type">Type of request</label>
+            <select id="request-type" name="request_type" required disabled data-request-type-select>
+              <option value="">Select a request type</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="first-name">First name</label>
+            <input id="first-name" name="first_name" type="text" autocomplete="given-name" maxlength="80" required>
+          </div>
+
+          <div class="form-field">
+            <label for="last-name">Last name</label>
+            <input id="last-name" name="last_name" type="text" autocomplete="family-name" maxlength="80" required>
+          </div>
+
+          <div class="form-field form-field--full">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="254" required>
+          </div>
+
+          <div class="form-field form-field--full">
+            <div class="form-label-row">
+              <label for="message">Message</label>
+              <span>Up to 4,000 characters</span>
+            </div>
+            <textarea id="message" name="message" rows="7" maxlength="4000" placeholder="Tell me how I can help…" required></textarea>
+          </div>
+
+          <p class="form-notice" data-form-notice>Your details are used only to respond to this support request.</p>
+          <button class="button button--primary support-submit" type="submit">Send support request <span aria-hidden="true">→</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <p>© <span data-current-year></span> Remy Moscovitz</p>
+    <p><a href="mailto:mail@remymoscovitz.com">mail@remymoscovitz.com</a></p>
+  </footer>
+</body>
+</html>

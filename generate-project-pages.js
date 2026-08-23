@@ -17,7 +17,7 @@ const path = require("path");
 
 const SITE_URL = "https://remymoscovitz.com";
 const ROOT = __dirname;
-const ASSET_VERSION = "20260824-1";
+const ASSET_VERSION = "20260824-2";
 const DEFAULT_DESCRIPTION = "A project from the software engineering portfolio of Remy Moscovitz.";
 const DEFAULT_OG_IMAGE = "/media/og-remy-portfolio.png";
 
@@ -155,7 +155,10 @@ function renderPage({ lang, project, canonicalPath, alternatePath, nav, ogLocale
 
   <footer class="site-footer section-shell">
     <p>© <span data-current-year></span> Remy Moscovitz</p>
-    <p><a href="${nav.projectsIndexHref}">${nav.projectIndexLink}</a></p>
+    <nav class="footer-links" aria-label="${nav.footerLabel}">
+      <a href="${nav.projectsIndexHref}">${nav.projectIndexLink}</a>
+      <a href="/privacy/">${nav.privacyLink}</a>
+    </nav>
   </footer>
 </body>
 </html>
@@ -179,7 +182,9 @@ const EN_NAV = {
   allProjects: "All projects",
   loadingEyebrow: "Loading project",
   loadingHeading: "Preparing the preview…",
-  projectIndexLink: "Project index"
+  projectIndexLink: "Project index",
+  footerLabel: "Footer navigation",
+  privacyLink: "Privacy"
 };
 
 const FR_NAV = {
@@ -199,7 +204,9 @@ const FR_NAV = {
   allProjects: "Tous les projets",
   loadingEyebrow: "Chargement du projet",
   loadingHeading: "Préparation de l’aperçu…",
-  projectIndexLink: "Index des projets"
+  projectIndexLink: "Index des projets",
+  footerLabel: "Navigation de pied de page",
+  privacyLink: "Confidentialité"
 };
 
 function writePage(outputPath, contents) {

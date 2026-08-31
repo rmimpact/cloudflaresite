@@ -18,6 +18,7 @@ const path = require("path");
 const SITE_URL = "https://remymoscovitz.com";
 const ROOT = __dirname;
 const ASSET_VERSION = "20260824-2";
+const SCRIPT_VERSION = "20260901-1";
 const DEFAULT_DESCRIPTION = "A project from the software engineering portfolio of Remy Moscovitz.";
 const DEFAULT_OG_IMAGE = "/media/og-remy-portfolio.png";
 
@@ -125,7 +126,7 @@ function renderPage({ lang, project, canonicalPath, alternatePath, nav, ogLocale
 
   <script src="/language.js?v=${ASSET_VERSION}"></script>
   <link rel="stylesheet" href="/styles/site.css?v=${ASSET_VERSION}">
-  <script src="/script.js?v=${ASSET_VERSION}" defer></script>
+  <script src="/script.js?v=${SCRIPT_VERSION}" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">${nav.skipLink}</a>

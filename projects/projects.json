@@ -140,12 +140,12 @@
     "links": [
       {
         "label": "Download for Mac",
-        "url": "https://github.com/rmimpact/FileDrop/releases/download/filedrop-v1.0.0/FileDrop_1.0.0_darwin_universal.dmg",
+        "url": "https://github.com/rmimpact/FileDrop/releases/download/filedrop-v1.0.1/FileDrop_1.0.1_darwin_universal.dmg",
         "primary": true
       },
       {
         "label": "Download for Windows",
-        "url": "https://github.com/rmimpact/FileDrop/releases/download/filedrop-v1.0.0/FileDrop_1.0.0_windows_x64-setup.exe",
+        "url": "https://github.com/rmimpact/FileDrop/releases/download/filedrop-v1.0.1/FileDrop_1.0.1_windows_x64-setup.exe",
         "primary": true
       },
       {

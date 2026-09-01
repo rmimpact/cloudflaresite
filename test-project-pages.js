@@ -34,22 +34,22 @@ const fileDropHtml = rawProjectHtml("en", "filedrop");
 const remHtml = rawProjectHtml("en", "rem-ai");
 const frenchFileDropHtml = rawProjectHtml("fr", "filedrop");
 const expectedFileDropDownloads = [
-  "https://github.com/rmimpact/FileDrop/releases/download/filedrop-v1.0.1/FileDrop_1.0.1_darwin_universal.dmg",
-  "https://github.com/rmimpact/FileDrop/releases/download/filedrop-v1.0.1/FileDrop_1.0.1_windows_x64-setup.exe"
+  "https://github.com/rmimpact/FileDrop/releases/latest/download/FileDrop-macOS.dmg",
+  "https://github.com/rmimpact/FileDrop/releases/latest/download/FileDrop-Windows-x64-Setup.exe"
 ];
 const englishFileDrop = enProjects.find(({ id }) => id === "filedrop");
 const frenchFileDrop = frProjects.find(({ id }) => id === "filedrop");
 
 assert.ok(fileDropHtml.includes('<meta property="og:title" content="FileDrop — Remy Moscovitz">'));
 assert.ok(fileDropHtml.includes('<meta property="og:image" content="https://remymoscovitz.com/media/projects/filedrop-banner.png">'));
-assert.ok(fileDropHtml.includes('<script src="/script.js?v=20260901-1" defer></script>'));
+assert.ok(fileDropHtml.includes('<script src="/script.js?v=20260901-2" defer></script>'));
 assert.ok(remHtml.includes('<meta property="og:title" content="REM — Remy Moscovitz">'));
 assert.ok(remHtml.includes('<meta property="og:image" content="https://remymoscovitz.com/media/projects/rem-ai/Rem_Banner.png">'));
 assert.notStrictEqual(fileDropHtml.match(/<meta property="og:image" content="([^"]+)">/)[1], remHtml.match(/<meta property="og:image" content="([^"]+)">/)[1]);
 assert.ok(frenchFileDropHtml.includes("Un outil pour partager des fichiers entre des Mac et des PC Windows"));
 assert.deepStrictEqual(englishFileDrop.links.slice(0, 2).map(({ url }) => url), expectedFileDropDownloads);
 assert.deepStrictEqual(frenchFileDrop.links.slice(0, 2).map(({ url }) => url), expectedFileDropDownloads);
-assert.ok(!JSON.stringify([englishFileDrop, frenchFileDrop]).includes("filedrop-v1.0.0"));
+assert.ok(!JSON.stringify([englishFileDrop, frenchFileDrop]).includes("/releases/download/filedrop-v"));
 
 const fallback = projectMetadata({ title: "Fallback project" }, "/projects/fallback-project/");
 assert.strictEqual(fallback.image, `${SITE_URL}${DEFAULT_OG_IMAGE}`);
